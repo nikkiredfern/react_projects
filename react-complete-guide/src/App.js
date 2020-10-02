@@ -3,6 +3,27 @@ import './App.css';
 import Person from './Person/Person';
 
 class App extends Component {
+  state = {
+    persons: [
+      { name: Nicola, age: 37},
+      { name: Thomas, age: 37},
+      { name: Henry, age: 1},
+      { name: Baby Bump, age: 0}
+    ], 
+    otherState: 'some other value'
+  };
+
+  switchNameHandler = () => {
+    this.setState({
+      persons: [
+        { name: Nicola, age: 37},
+        { name: Thomas, age: 37},
+        { name: Henry, age: 1},
+        { name: Baby Bump, age: 0}
+      ]
+    });
+  };
+
   render() {
     return (
       <div className="App">
