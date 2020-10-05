@@ -5,6 +5,7 @@ import Person from './Person/Person';
 class App extends Component {
   state = {
     persons: [
+<<<<<<< HEAD
       {name: 'Nicola', age: 37},
       {name: 'Thomas', age: 37},
       {name: 'Henry', age: 1},
@@ -46,6 +47,28 @@ class App extends Component {
       padding: '8px',
       cursor: 'pointer'
     }
+=======
+      { name: Nicola, age: 37},
+      { name: Thomas, age: 37},
+      { name: Henry, age: 1},
+      { name: Baby Bump, age: 0}
+    ], 
+    otherState: 'some other value'
+  };
+
+  switchNameHandler = () => {
+    this.setState({
+      persons: [
+        { name: Nicola, age: 37},
+        { name: Thomas, age: 37},
+        { name: Henry, age: 1},
+        { name: Baby Bump, age: 0}
+      ]
+    });
+  };
+
+  render() {
+>>>>>>> 8bce1895bca5d93f5ab0b8b6f060af707a91e1a6
     return (
       <div className="App">
         <h1>Hi, I'm a React App</h1>
